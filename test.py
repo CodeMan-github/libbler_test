@@ -1,6 +1,17 @@
 import json
 import time
 
+"""
+event object:
+{
+	"name": "",
+	"category": "",
+	"person": "",
+	"time": "",
+}
+"""
+
+# Stores all events
 events = []
 
 # Gets the event from the str and stores it to stream memory
