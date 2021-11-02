@@ -1,3 +1,6 @@
+from datetime import datetime
+import re
+
 class Event(object):
 
     message = None
@@ -13,8 +16,8 @@ class Event(object):
        
     @staticmethod
     def create(input = ""):
-		input = str(input)
-		try:
+        input = str(input)
+        try:
             message, category, person = re.findall('^(.*)\s#(\S*)\s@(\S*)$', input)[0]
             return Event(message, category, person, datetime.datetime.now())
         except IndexError:
