@@ -1,4 +1,4 @@
-# Event Manager
+# Event Manager (Python Core)
 
 ## Functionality:
 
